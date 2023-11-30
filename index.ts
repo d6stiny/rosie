@@ -15,6 +15,4 @@ client.listenForMessages();
 
 const openai = new OpenAIClient();
 
-client.connect(
-  "MTEzMjc1OTEwNjk5NDg0Nzc2Ng.GGJG20.EYweHRiqvvoK0GM6gHlUsfVhBdgcnA6BEuPm-A"
-);
+client.connect(process.env.DISCORD_TOKEN!);
