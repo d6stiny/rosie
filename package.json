@@ -1,0 +1,27 @@
+{
+  "name": "rosie",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun index.ts",
+    "dev": "bun --watch index.ts",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio"
+  },
+  "prisma": {
+    "schema": "src/database/schema.prisma"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.5.2",
+    "@upstash/redis": "^1.24.1",
+    "discord.js": "^14.13.0",
+    "openai": "^4.17.4"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "prisma": "^5.5.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
